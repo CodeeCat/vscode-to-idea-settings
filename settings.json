@@ -1,0 +1,61 @@
+{
+	// ==================== Python 专属配置 ====================
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter", // Python 默认使用 Black Formatter 格式化
+		"editor.defaultColorDecorators": "auto", // 在颜色字符串旁显示一个小色块
+	},
+
+	// ==================== 主题与工作台 ====================
+	"workbench.colorTheme": "One Dark Pro",
+	"oneDarkPro.italic": false, // 去掉One Dark Pro斜体
+	"workbench.editor.enablePreview": false, // 关闭预览标签页，单击文件后也会保留独立标签
+	"workbench.editor.wrapTabs": true, // 打开的文件标签会自动换行显示
+	"workbench.tree.indent": 16, // 文件树每一层的缩进宽度为 16 像素
+	"workbench.tree.renderIndentGuides": "always", // 始终显示文件树的层级引导线
+	"workbench.activityBar.compact": true, // 控制活动栏是否使用图标较小、宽度减少的紧凑布局
+
+	// ==================== 资源管理器 ====================
+	"explorer.confirmDelete": false, // 删除文件时不弹出 VS Code 的二次确认
+	"explorer.compactFolders": false, // 不合并只有单个子目录的文件夹，逐级显示目录结构
+	"explorer.decorations.badges": false, // 隐藏资源管理器中的 Git 状态和 Problems 等徽标
+	"explorer.autoReveal": false, // 控制资源管理器是否应在打开文件时自动显示并选择文件。
+
+	// ==================== 代码编辑器 ====================
+	"editor.guides.bracketPairs": true, // 显示成对括号之间的层级引导线
+	"editor.guides.bracketPairsHorizontal": false, // 关闭水平括号对指南。
+	"editor.bracketPairColorization.enabled": true, // 对不同嵌套层级的括号使用不同颜色
+	"editor.linkedEditing": true, // 编辑 HTML/XML 等成对标签时同步修改对应标签
+	"editor.smoothScrolling": true, // 开启编辑器平滑滚动效果
+	"editor.unicodeHighlight.ambiguousCharacters": false, // 不高亮容易与普通字符混淆的 Unicode 字符
+
+	// ==================== 文件保存 ====================
+	"files.autoSave": "afterDelay", // 文件修改后经过指定延迟自动保存
+	"files.autoSaveDelay": 1000, // 自动保存延迟为 1000 毫秒，即 1 秒
+
+	// ==================== 自定义颜色 ====================
+	"workbench.colorCustomizations": {
+		"list.warningForeground": "#ABB2BF", // 列表中警告状态的前景色设为灰白色，降低警告的视觉干扰
+		"list.errorForeground": "#b93434", // 列表中错误状态的前景色设为红色，突出代码错误
+		"gitDecoration.untrackedResourceForeground": "#fa9797", // Git 未跟踪文件使用浅红色
+		"gitDecoration.modifiedResourceForeground": "#6897BB", // Git 已跟踪但尚未暂存的修改文件使用蓝色
+		"gitDecoration.stageModifiedResourceForeground": "#6897BB", // Git 已暂存修改的文件使用蓝色
+		"gitDecoration.addedResourceForeground": "#73C991" // Git 新增文件状态使用绿色
+	},
+
+	// ==================== 扩展遥测 ====================
+	"telemetry.telemetryLevel": "off",
+	"redhat.telemetry.enabled": false,
+	"java.configuration.runtimes": [
+		{
+			"name": "JavaSE-21",
+			"path": "",
+			"default": true
+		}
+	],
+
+	// ==================== 其他 ====================
+	"chat.disableAIFeatures": true, // 禁用copilot
+
+	// ==================== 自定义结束 ====================
+
+}
